@@ -10,8 +10,8 @@
             padding: 12px 20px;
             margin: 8px 0;
             box-sizing: border-box;
-        }
-        input[type=submit] {
+        }       
+        .tombol {
             background-color: #4CAF50;
             border: none;
             color: white;
@@ -29,7 +29,8 @@
         <input class="inputan" type="text" name="username">
         <label>Password</label>
         <input class="inputan" type="password" name="password">
-        <input type="submit" name="tombolSubmit" value="Login">
+        <input class="tombol" type="submit" name="tombolSubmit" value="Login">
+        <a href="registrasi.php" class="tombol">Registrasi</a>
     </form>
 </body>
 </html>
