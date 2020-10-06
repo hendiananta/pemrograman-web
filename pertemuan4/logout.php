@@ -3,8 +3,8 @@
     session_unset();
     session_destroy();
     if (!isset($_SESSION["sessionUsername"])) {
-       // header("Location: login.php");
-       echo "session sudah didestroy";
+       header("Location: login.php");
+       //echo "session sudah didestroy";
     }
     
 ?>
