@@ -15,7 +15,7 @@ if (isset($_POST['tombolSubmit'])) {
     }
 }
 else {
- echo "Mohon maaf cek login tidak bs diakses langsung";
+    header("Location: login.php");
 }
 
 
