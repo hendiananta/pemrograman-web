@@ -16,7 +16,7 @@
         $namaBelakang = $_POST['namaBelakang'];
 
         $sql = "INSERT INTO registrasi (username, password, email, namaDepan, namaBelakang)
-        VALUES ('$username',$password','$email','$namaDepan','$namaBelakang')";
+        VALUES ('$username','$password','$email','$namaDepan','$namaBelakang')";
 
         if (mysqli_query($conn, $sql)) {
             echo "Data berhasil diinput";
