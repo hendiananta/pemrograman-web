@@ -48,6 +48,9 @@
                 $sks = $row["sks"];
             }
         }
+        else {            
+            $status = 3;
+        }
     }  
     else {       
         $namamk = "";
@@ -78,7 +81,16 @@
             </div>
         <?php 
             }
-        
+            else if ($status == 3) {        
+        ?>
+            <div class="alert alert-danger alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                Data tidak terdapat di dalam database, halaman ini akan diredirect ke List Mahasiswa dalam waktu 3 detik
+            </div>
+        <?php 
+            header("refresh:3; url=listmatakuliah.php");
+            die;
+            }
         ?>
         <form id="myform" method="post" action="edit_mk2.php">
             <div class="form-group">
